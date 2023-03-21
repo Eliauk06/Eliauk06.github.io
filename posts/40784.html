@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="stylesheet" href="/css/prism.css" type="text/css">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+</head>
 
 
 
@@ -471,9 +471,9 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="本地博客发布到Github-Pages的环节出错"><a href="#本地博客发布到Github-Pages的环节出错" class="headerlink" title="本地博客发布到Github Pages的环节出错"></a>本地博客发布到Github Pages的环节出错</h1><p>在本地博客与GitHub连接成功后，需要进入博客站点目录，用文本编辑器打开_config.yml，这个_config.yml是博客的配置文件，在底部deploy下面添加一个repo项 ，一个branch项。</p>
-<h2 id="其中repo项需要登陆Github，在如下图中获得"><a href="#其中repo项需要登陆Github，在如下图中获得" class="headerlink" title="其中repo项需要登陆Github，在如下图中获得"></a>其中repo项需要登陆Github，在如下图中获得</h2><p><img src="/images/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/1.png"><br>将其粘贴到_config.yml的deploy中，如下图<br><img src="/images/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/2.png"></p>
-<h3 id="之后就是文章的重点-由于我在网上找的搭建博客的教学在branch的值大多是-master-，导致我在使用命令-hexo-g-amp-amp-hexo-d上传到Github-Pages时，在解决完所有报错后我的博客页面还是无法更新。之后，我发现我的Github中设置的分支是main。如下图"><a href="#之后就是文章的重点-由于我在网上找的搭建博客的教学在branch的值大多是-master-，导致我在使用命令-hexo-g-amp-amp-hexo-d上传到Github-Pages时，在解决完所有报错后我的博客页面还是无法更新。之后，我发现我的Github中设置的分支是main。如下图" class="headerlink" title="之后就是文章的重点.由于我在网上找的搭建博客的教学在branch的值大多是 master ，导致我在使用命令 hexo g &amp;&amp; hexo d上传到Github Pages时，在解决完所有报错后我的博客页面还是无法更新。之后，我发现我的Github中设置的分支是main。如下图"></a>之后就是文章的重点.由于我在网上找的搭建博客的教学在branch的值大多是 <strong>master</strong> ，导致我在使用命令 hexo g &amp;&amp; hexo d上传到Github Pages时，在解决完所有报错后我的博客页面还是无法更新。之后，我发现我的Github中设置的分支是<strong>main</strong>。如下图</h3><p><img src="/images/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/3.png"><br>因此我的branch的值也应该设置为<strong>main</strong>，如下图<br><img src="/images/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/4.png"></p>
-<h4 id="要注意的是无论是repo还是branch，前面都要有一个空格。"><a href="#要注意的是无论是repo还是branch，前面都要有一个空格。" class="headerlink" title="要注意的是无论是repo还是branch，前面都要有一个空格。"></a>要注意的是无论是repo还是branch，前面都要有一个空格。</h4><p>最后就是生成页面，并发布至Github Pages，执行如下命令：<br>hexo g &amp;&amp; hexo d<br>等待页面更新后问题解决。</p>
+<h2 id="repo的设置"><a href="#repo的设置" class="headerlink" title="repo的设置"></a>repo的设置</h2><p>其中repo项需要登陆Github，在如下图中获得<br><img src="/images/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/1.png"><br>将其粘贴到_config.yml的deploy中，如下图<br><img src="/images/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/2.png"></p>
+<h3 id="branch的设置"><a href="#branch的设置" class="headerlink" title="branch的设置"></a>branch的设置</h3><p>之后就是文章的重点.由于我在网上找的搭建博客的教学在branch的值大多是 <strong>master</strong> ，导致我在使用命令 hexo g &amp;&amp; hexo d上传到Github Pages时，在解决完所有报错后我的博客页面还是无法更新。之后，我发现我的Github中设置的分支是<strong>main</strong>。如下图<br><img src="/images/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/3.png"><br>因此我的branch的值也应该设置为<strong>main</strong>，如下图<br><img src="/images/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98/4.png"></p>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>要注意的是无论是repo还是branch，前面都要有一个空格。<br>最后就是生成页面，并发布至Github Pages，执行如下命令：<br>hexo g &amp;&amp; hexo d<br>等待页面更新后问题解决。</p>
 
                 
             </div>
